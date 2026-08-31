@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Pico-8 Frost games</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
       background-color: #fdfdfd;
@@ -60,6 +63,10 @@
     img {
       max-width: 100%;
     }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
     h1, h2, h3, h4, h5, h6 {
       margin-top: 1.4em;
     }
@@ -103,8 +110,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid #1a1a1a;
       height: 1px;
       margin: 1em 0;
     }
@@ -152,17 +159,17 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <header id="title-block-header">
@@ -182,5 +189,13 @@ Racer</a></h3>
 <p>You are the submarine. The little sibling submarine will follow you
 about. The Mothership submarine bumbles back and forwards. The crab
 robot crawls on the seabed, and fires a seeking missile at you.</p>
+<h3 id="unicorn-jump"><a href="unicorn_jump.html">Unicorn Jump</a></h3>
+<p>A game where you play as a unicorn jumping over obstacles on a starry
+night. Use jump controls to avoid hitting the walls.</p>
+<h3 id="asteroid-dodger"><a href="asteroid-dodger.html">Asteroid
+Dodger</a></h3>
+<p>You control a spaceship flying through space. Dodge procedurally
+generated asteroids while they spawn faster and faster! Try to survive
+as long as you can and get a high score.</p>
 </body>
 </html>
