@@ -1,4 +1,4 @@
-# Frost Pico-8 Games
+# Frost family Pico-8 games
 
 Back in December 2022, I bought a copy of
 [Pico-8](https://www.lexaloffle.com/pico-8.php) : an 8-bit fantasy console
